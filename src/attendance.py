@@ -15,9 +15,9 @@ def get_student_by_index(index):
     students = ["Alice", "Bob", "Charlie"]
     try:
         return students[index]
-    except:
+    except IndexError:
         # idx를 벗어나면 False 반환
-        return 0
+        return None
 
 def mark_present(name):
     if name in attendance_book:
