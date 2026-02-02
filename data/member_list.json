@@ -1,0 +1,9 @@
+{
+    "members": [
+        {
+            "name": "Club President",
+            "role": "Admin",
+            "bio": "Managing the club."
+        }
+    ]
+}
