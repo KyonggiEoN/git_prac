@@ -13,8 +13,11 @@ def add_student(name, list=[]): # FIXME: MutableDefaultArgument: list persists a
 
 def get_student_by_index(index):
     students = ["Alice", "Bob", "Charlie"]
-    # FIXME: IndexError: index might be out of range
-    return students[index]
+    try:
+        return students[index]
+    except IndexError:
+        # idx를 벗어나면 False 반환
+        return None
 
 def mark_present(name):
     if name in attendance_book:
