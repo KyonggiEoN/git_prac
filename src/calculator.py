@@ -1,9 +1,12 @@
-def add(a, b) # FIXME: SyntaxError: missing colon
+def add(a, b): # FIXME: SyntaxError: missing colon
     return a + b
 
 def subtract(a, b):
     # FIXME: LogicError: returns wrong result
-    return a + b 
+    if a>b:
+        return a - b
+    else:
+        return b - a 
 
 def divide(a, b):
     # FIXME: ZeroDivisionError: what if b is 0?
