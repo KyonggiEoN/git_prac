@@ -10,7 +10,7 @@ def subtract(a, b):
 
 def divide(a, b):
     # FIXME: ZeroDivisionError: what if b is 0?
-     try:
+    try:
         result = a / b
     except ZeroDivisionError:
         return "에러: 0으로 나눌 수 없습니다."
