@@ -2,8 +2,7 @@
 import non_existent_module
 
 def reverse_string(s):
-    # FIXME: LogicError: Logic doesn't reverse, just returns same
-    return s
+    return s[::-1]
 
 def count_vowels(s):
     count = 0
