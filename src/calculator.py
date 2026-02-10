@@ -17,9 +17,9 @@ def divide(a, b):
     else:
         return result
 
-def multiply(a, b):
-    # FIXME: TypeError: what if input is string '10'?
-    return a * b
+def multiply(a, b): #수정된 함수
+    # FIXME: TypeError: what if input is string '10'? 
+    return float(a) * float(b)
 
 def calculate_average(numbers):
     total = sum(numbers)
