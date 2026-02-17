@@ -4,8 +4,7 @@ attendance_book = {
 }
 
 def check_attendance(name):
-    # FIXME: KeyError: what if name doesn't exist?
-    return attendance_book[name]
+    return attendance_book.get(name, False)
 
 def add_student(name, list=[]): # FIXME: MutableDefaultArgument: list persists across calls
     list.append(name)
